@@ -1,0 +1,16 @@
+$myBackgroundColor: lightblue;
+body {
+  text-align: center;
+}
+
+.my-background {
+  background-color: $myBackgroundColor;
+  font-size: 60px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.my-img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
