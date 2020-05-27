@@ -10,8 +10,8 @@ module.exports = {
   },
   entry: {
     app: ['regenerator-runtime/runtime', './index.tsx'],
-    appStyles: ['./styles/mystyles.scss'],
-    reactStyles: ['./styles/reactStyles.scss'],
+    appStyles: ['./styles/mystyles.scss', './styles/reactStyles.scss'],
+    // reactStyles: ['./styles/reactStyles.scss'],
     // vendor: ['react'],
   },
   optimization: {
@@ -41,7 +41,15 @@ module.exports = {
         exclude: /node_modules/,
         enforce: 'pre',
         loader: 'eslint-loader',
-        loader: 'babel-loader',
+      },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        loader: 'awesome-typescript-loader',
+        options: {
+          useBabel: true,
+          babelCore: '@babel/core', 
+        },
       },
       {
         test: /\.(png|jpg)$/,

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../content/logo.png';
 
-const MyLogo = () => {
+const MyLogo: React.FC = () => {
   return (
     <div className='react-logo'>
       <img src={logo} alt='logo' />

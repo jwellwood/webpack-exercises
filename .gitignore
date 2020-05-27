@@ -3,3 +3,4 @@
 /dev.env
 /prod.env
 /monitor
+.DS_Store

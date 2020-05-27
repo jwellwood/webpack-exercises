@@ -48,7 +48,7 @@ module.exports = merge(base, {
       capture: true,
       target: '../monitor/myStatsStore.json',
       // next line commented so we can see what our output looks like. To see the monitor instead, uncomment.
-      launch: true,
+      // launch: true,
       port: 3030,
     }),
   ],

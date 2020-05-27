@@ -1,12 +1,14 @@
 $myBackgroundColor: lightblue;
+$myFont: 'Trebuchet MS', Arial, sans-serif;
+
 body {
   text-align: center;
 }
 
 .my-background {
   background-color: $myBackgroundColor;
+  font-family: $myFont;
   font-size: 60px;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .my-img {
